@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"></meta>
+    <title>Perception of spaciousness</title>	
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript" src="onlinefolio/layout/scripts/jquery.min.js"></script>
+<script type="text/javascript" src="onlinefolio/layout/scripts/jquery.slidepanel.setup.js"></script>
+<script type="text/javascript" src="javascripts/gifffer.min.js"></script>
+
+</head>
+<style>
+.myButton {
+	background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	text-align:center;
+}
+h1 {
+	color: black;
+	font-family: "Georgia";
+}
+h2 {
+	color: black;
+	font-size: 100%;
+	font-family: "Georgia";
+
+}
+.myButton:hover {
+	background-color:#CC3366;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.header {
+   
+    padding: 25px;
+    height: 50px;
+    line-height: 0.05;
+}
+.gifs {  
+	background-color:#F8F8F8;
+    height:300px;
+    width:850px;
+    float:left;
+}
+.fragen {
+    width:430px;
+    float:left;
+    padding:10px; 
+    margin-left:30px;
+}
+.first {
+	background-color:#F8F8F8;
+	text-align: right;
+	width:110px;
+	float:left;
+
+}
+.second {
+	background-color:#F8F8F8;
+	width:120px;
+    text-align: left;
+    float:left;
+
+}
+.dots {
+    width:180px;
+    margin-left: 5px;
+    float:left;
+}
+.welcome {
+	padding-left:25px;
+    height: 30px;
+    font-family: "Calibri";
+}
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.personal {
+	border-style: dotted;
+	border-width: 1px;
+	margin: 20px;
+	padding: 10px;
+}
+
+img {
+	margin-left: 0px;
+	margin-bottom: 20px;
+}
+</style>
+<body>
+<div class="header">
+	<h1>Perception of spaciousness</h1>
+	<h2>Online survey</h2>
+	<hr noshade size="1">
+</div>
+<div class="welcome">
+	Hi! Thank you for agreeing to take part in my survey measearing how different factors such as horizontal area, color of the walls or amount of light can affect the perception of room's speciousness. The survey should take 10-15 minutes to complete. 
+</div>
+
+<form action="/458625klfuieuj8ikkd58965dmmjkss/send" method="get">
+<div class="personal">
+<div>
+	Please select your sex from the list  
+	<select name="sex" id="sex" required>
+	  <option selected="selected">Select an option</option>
+      <option>Female</option>
+      <option>Male</option>
+      <option>Other</option>
+    </select>
+</div>
+
+<div style="margin-top: 10px;">
+	Please type your age
+	<input type="number" name="age" required>
+</div>
+</div>
+<div class="gifs">
+	<img data-gifffer="images/test_anim.gif"/>
+	<img data-gifffer="images/test_anim.gif"/>
+</div>
+<div class="fragen">
+	<p>The first question</p>
+<ul>
+	<li>
+		<div class="first">
+			Tiny
+		</div>
+		<div class="dots">
+				<input type="radio" name="tiny" value="1">
+			  	<input type="radio" name="tiny" value="2">
+			  	<input type="radio" name="tiny" value="3">
+			  	<input type="radio" name="tiny" value="4">
+			  	<input type="radio" name="tiny" value="5">
+			  	<input type="radio" name="tiny" value="6">
+			  	<input type="radio" name="tiny" value="7">
+		</div>
+		<div class="second">
+			Huge
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Open
+		</div>
+		<div class="dots">
+				<input type="radio" name="open" value="1">
+				<input type="radio" name="open" value="2">
+				<input type="radio" name="open" value="3">
+				<input type="radio" name="open" value="4">
+				<input type="radio" name="open" value="5">
+				<input type="radio" name="open" value="6">
+				<input type="radio" name="open" value="7">
+
+		</div>
+		<div class="second">
+			Closed
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Restricted space
+		</div>
+		<div class="dots">
+				<input type="radio" name="rSpace" value="1">
+				<input type="radio" name="rSpace" value="2">
+				<input type="radio" name="rSpace" value="3">
+				<input type="radio" name="rSpace" value="4">
+				<input type="radio" name="rSpace" value="5">
+				<input type="radio" name="rSpace" value="6">
+				<input type="radio" name="rSpace" value="7">
+		</div>
+		<div class="second">
+			Free space
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	
+</ul>
+<center>
+	<button class="myButton" type="submit" >Submit</button>
+</center>
+
+
+</div>
+</form>
+<script>
+window.onload = function() {
+    Gifffer();
+}
+</script>
+	
+	
+	<!--button class="myButton" type="submit" id="button">Button</button-->
+	<!--img src="images/test.jpg" alt="" onclick='javascript:(this.src=="images/test.jpg"?this.src="images/gif1.gif":"")' /-->
+	
+
+</body>
+</html>
