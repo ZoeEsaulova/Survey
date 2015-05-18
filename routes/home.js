@@ -30,7 +30,7 @@ router.post('/', function(req, res) {
 
 /* get answers */
 router.get('/458625klfuieuj8ikkd58965dmmjkss/send', function(req, res) {
-	var room = { tiny: req.query.tiny,
+	var room = { tiny: req.query.sb,
 		open: req.query.open,
 		rSpace: req.query.rSpace }
 	var entry = new Entry({ 

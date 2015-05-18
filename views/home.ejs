@@ -11,21 +11,49 @@
 </head>
 <style>
 .myButton {
-	background-color:#44c767;
-	-moz-border-radius:28px;
-	-webkit-border-radius:28px;
-	border-radius:28px;
-	border:1px solid #18ab29;
+	-moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	box-shadow:inset 0px 1px 0px 0px #f29c93;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100));
+	background:-moz-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:-webkit-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:-o-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:-ms-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100',GradientType=0);
+	background-color:#fe1a00;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #d83526;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
-	font-size:17px;
-	padding:16px 31px;
+	font-size:22px;
+	font-weight:bold;
+	padding:12px 44px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
-	text-align:center;
+	text-shadow:0px 1px 0px #b23e35;
 }
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00));
+	background:-moz-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background:-webkit-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background:-o-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background:-ms-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00',GradientType=0);
+	background-color:#ce0100;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
 h1 {
 	color: black;
 	font-family: "Georgia";
@@ -50,7 +78,6 @@ h2 {
     line-height: 0.05;
 }
 .gifs {  
-	background-color:#F8F8F8;
     height:300px;
     width:850px;
     float:left;
@@ -62,14 +89,12 @@ h2 {
     margin-left:30px;
 }
 .first {
-	background-color:#F8F8F8;
 	text-align: right;
 	width:110px;
 	float:left;
 
 }
 .second {
-	background-color:#F8F8F8;
 	width:120px;
     text-align: left;
     float:left;
@@ -84,6 +109,7 @@ h2 {
 	padding-left:25px;
     height: 30px;
     font-family: "Calibri";
+    font-size:20px;
 }
 ul {
     list-style-type: none;
@@ -91,15 +117,24 @@ ul {
     margin: 0px;
 }
 .personal {
-	border-style: dotted;
+	background-color:#F8F8F8;
 	border-width: 1px;
 	margin: 20px;
+	margin-top: 40px;
 	padding: 10px;
+	font-family: "Calibri";
 }
 
 img {
 	margin-left: 0px;
-	margin-bottom: 20px;
+	margin-bottom: 60px;
+}
+.gif {
+	margin-bottom: 60px;
+}
+.frage {
+	margin-bottom: 240px;
+	margin-top: 80px;
 }
 </style>
 <body>
@@ -109,7 +144,7 @@ img {
 	<hr noshade size="1">
 </div>
 <div class="welcome">
-	Hi! Thank you for agreeing to take part in my survey measearing how different factors such as horizontal area, color of the walls or amount of light can affect the perception of room's speciousness. The survey should take 10-15 minutes to complete. 
+	This test consists of 7 videos showing the 3D-Models of different rooms. Please watch each video and rate the rooms on the traits given rights. Do that for each pair of adjectives. 
 </div>
 
 <form action="/458625klfuieuj8ikkd58965dmmjkss/send" method="get">
@@ -124,33 +159,39 @@ img {
     </select>
 </div>
 
-<div style="margin-top: 10px;">
+<div style="margin-top: 10px; font-family: "Calibri";">
 	Please type your age
 	<input type="number" name="age" required>
 </div>
 </div>
 <div class="gifs">
+	<h2> Room 1 </h2>
+	<div class="gif">
 	<img data-gifffer="images/test_anim.gif"/>
+	</div>
+	<h2> Room 2 </h2>
+	<div class="gif">
 	<img data-gifffer="images/test_anim.gif"/>
+	</div>
 </div>
 <div class="fragen">
-	<p>The first question</p>
+<div class="frage">
 <ul>
 	<li>
 		<div class="first">
-			Tiny
+			Non spacios
 		</div>
 		<div class="dots">
-				<input type="radio" name="tiny" value="1">
-			  	<input type="radio" name="tiny" value="2">
-			  	<input type="radio" name="tiny" value="3">
-			  	<input type="radio" name="tiny" value="4">
-			  	<input type="radio" name="tiny" value="5">
-			  	<input type="radio" name="tiny" value="6">
-			  	<input type="radio" name="tiny" value="7">
+				<input type="radio" name="sp" value="1">
+			  	<input type="radio" name="sp" value="2">
+			  	<input type="radio" name="sp" value="3">
+			  	<input type="radio" name="sp" value="4">
+			  	<input type="radio" name="sp" value="5">
+			  	<input type="radio" name="sp" value="6">
+			  	<input type="radio" name="sp" value="7">
 		</div>
 		<div class="second">
-			Huge
+			Spacios
 		</div>
 	</li>
 	<li>
@@ -197,14 +238,323 @@ img {
 	<li>
 		<span style="color:white;">test</span>
 	</li>
+	<li>
+		<div class="first">
+			Repelling
+		</div>
+		<div class="dots">
+				<input type="radio" name="invite" value="1" required>
+				<input type="radio" name="invite" value="2" required>
+				<input type="radio" name="invite" value="3" required>
+				<input type="radio" name="invite" value="4" required>
+				<input type="radio" name="invite" value="5" required>
+				<input type="radio" name="invite" value="6" required>
+				<input type="radio" name="invite" value="7" required>
+		</div>
+		<div class="second">
+			Inviting
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Disturbing
+		</div>
+		<div class="dots">
+				<input type="radio" name="rest" value="1">
+				<input type="radio" name="rest" value="2">
+				<input type="radio" name="rest" value="3">
+				<input type="radio" name="rest" value="4">
+				<input type="radio" name="rest" value="5">
+				<input type="radio" name="rest" value="6">
+				<input type="radio" name="rest" value="7">
+		</div>
+		<div class="second">
+			Restful
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Cozy
+		</div>
+		<div class="dots">
+				<input type="radio" name="cozy" value="1">
+				<input type="radio" name="cozy" value="2">
+				<input type="radio" name="cozy" value="3">
+				<input type="radio" name="cozy" value="4">
+				<input type="radio" name="cozy" value="5">
+				<input type="radio" name="cozy" value="6">
+				<input type="radio" name="cozy" value="7">
+		</div>
+		<div class="second">
+			Monumental
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Cramped
+		</div>
+		<div class="dots">
+				<input type="radio" name="roomy" value="1">
+				<input type="radio" name="roomy" value="2">
+				<input type="radio" name="roomy" value="3">
+				<input type="radio" name="roomy" value="4">
+				<input type="radio" name="roomy" value="5">
+				<input type="radio" name="roomy" value="6">
+				<input type="radio" name="roomy" value="7">
+		</div>
+		<div class="second">
+			Roomy
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Narrow
+		</div>
+		<div class="dots">
+				<input type="radio" name="wide" value="1">
+				<input type="radio" name="wide" value="2">
+				<input type="radio" name="wide" value="3">
+				<input type="radio" name="wide" value="4">
+				<input type="radio" name="wide" value="5">
+				<input type="radio" name="wide" value="6">
+				<input type="radio" name="wide" value="7">
+		</div>
+		<div class="second">
+			Wide
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Small
+		</div>
+		<div class="dots">
+				<input type="radio" name="small" value="1">
+				<input type="radio" name="small" value="2">
+				<input type="radio" name="small" value="3">
+				<input type="radio" name="small" value="4">
+				<input type="radio" name="small" value="5">
+				<input type="radio" name="small" value="6">
+				<input type="radio" name="small" value="7">
+		</div>
+		<div class="second">
+			Large
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+
 	
 </ul>
-<center>
-	<button class="myButton" type="submit" >Submit</button>
-</center>
+</div>
+<div class="frage">
+<ul>
+	<li>
+		<div class="first">
+			Non spacios
+		</div>
+		<div class="dots">
+				<input type="radio" name="sp" value="1">
+			  	<input type="radio" name="sp" value="2">
+			  	<input type="radio" name="sp" value="3">
+			  	<input type="radio" name="sp" value="4">
+			  	<input type="radio" name="sp" value="5">
+			  	<input type="radio" name="sp" value="6">
+			  	<input type="radio" name="sp" value="7">
+		</div>
+		<div class="second">
+			Spacios
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Open
+		</div>
+		<div class="dots">
+				<input type="radio" name="open" value="1">
+				<input type="radio" name="open" value="2">
+				<input type="radio" name="open" value="3">
+				<input type="radio" name="open" value="4">
+				<input type="radio" name="open" value="5">
+				<input type="radio" name="open" value="6">
+				<input type="radio" name="open" value="7">
+
+		</div>
+		<div class="second">
+			Closed
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Restricted space
+		</div>
+		<div class="dots">
+				<input type="radio" name="rSpace" value="1">
+				<input type="radio" name="rSpace" value="2">
+				<input type="radio" name="rSpace" value="3">
+				<input type="radio" name="rSpace" value="4">
+				<input type="radio" name="rSpace" value="5">
+				<input type="radio" name="rSpace" value="6">
+				<input type="radio" name="rSpace" value="7">
+		</div>
+		<div class="second">
+			Free space
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Repelling
+		</div>
+		<div class="dots">
+				<input type="radio" name="invite" value="1" required>
+				<input type="radio" name="invite" value="2" required>
+				<input type="radio" name="invite" value="3" required>
+				<input type="radio" name="invite" value="4" required>
+				<input type="radio" name="invite" value="5" required>
+				<input type="radio" name="invite" value="6" required>
+				<input type="radio" name="invite" value="7" required>
+		</div>
+		<div class="second">
+			Inviting
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Disturbing
+		</div>
+		<div class="dots">
+				<input type="radio" name="rest" value="1">
+				<input type="radio" name="rest" value="2">
+				<input type="radio" name="rest" value="3">
+				<input type="radio" name="rest" value="4">
+				<input type="radio" name="rest" value="5">
+				<input type="radio" name="rest" value="6">
+				<input type="radio" name="rest" value="7">
+		</div>
+		<div class="second">
+			Restful
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Cozy
+		</div>
+		<div class="dots">
+				<input type="radio" name="cozy" value="1">
+				<input type="radio" name="cozy" value="2">
+				<input type="radio" name="cozy" value="3">
+				<input type="radio" name="cozy" value="4">
+				<input type="radio" name="cozy" value="5">
+				<input type="radio" name="cozy" value="6">
+				<input type="radio" name="cozy" value="7">
+		</div>
+		<div class="second">
+			Monumental
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Cramped
+		</div>
+		<div class="dots">
+				<input type="radio" name="roomy" value="1">
+				<input type="radio" name="roomy" value="2">
+				<input type="radio" name="roomy" value="3">
+				<input type="radio" name="roomy" value="4">
+				<input type="radio" name="roomy" value="5">
+				<input type="radio" name="roomy" value="6">
+				<input type="radio" name="roomy" value="7">
+		</div>
+		<div class="second">
+			Roomy
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Narrow
+		</div>
+		<div class="dots">
+				<input type="radio" name="wide" value="1">
+				<input type="radio" name="wide" value="2">
+				<input type="radio" name="wide" value="3">
+				<input type="radio" name="wide" value="4">
+				<input type="radio" name="wide" value="5">
+				<input type="radio" name="wide" value="6">
+				<input type="radio" name="wide" value="7">
+		</div>
+		<div class="second">
+			Wide
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Small
+		</div>
+		<div class="dots">
+				<input type="radio" name="small" value="1">
+				<input type="radio" name="small" value="2">
+				<input type="radio" name="small" value="3">
+				<input type="radio" name="small" value="4">
+				<input type="radio" name="small" value="5">
+				<input type="radio" name="small" value="6">
+				<input type="radio" name="small" value="7">
+		</div>
+		<div class="second">
+			Large
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+
+	
+</ul>
+
+<button class="myButton" type="submit" style="margin-left:120px;">Submit</button>
 
 
 </div>
+</div>
+
 </form>
 <script>
 window.onload = function() {
