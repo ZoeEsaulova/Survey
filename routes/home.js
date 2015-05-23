@@ -41,6 +41,7 @@ router.get('/458625klfuieuj8ikkd58965dmmjkss/send', function(req, res) {
 	entry.save(function (err) {
 		if (err) return console.error(err)
 	});
+	console.log("IP: " + req.connection.remoteAddress)
   	res.redirect('/thanks');
 });
 
