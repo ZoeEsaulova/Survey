@@ -2,7 +2,7 @@
 
 module.exports = {
 
-	'url' : 'mongodb://localhost/survey' 
+	'url' : 'mongodb://localhost/survey2' 
 
 
 };
