@@ -64,6 +64,7 @@ router.get('/458625klfuieuj8ikkd58965dmmjkss/send', function(req, res) {
 		small: req.query.small3
 	}
 	var entry = new Entry({ 
+		test: "Hallo",
 		age: req.query.age, 
 		sex: req.query.sex, 
 		room1: room1,

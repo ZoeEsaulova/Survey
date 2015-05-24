@@ -6,6 +6,7 @@ var mongoose = require('mongoose');
 var entrySchema = mongoose.Schema({
 	age: Number,
 	sex: String,
+	test: String,
 	room1: { 
 		sp: Number,
 		open: Number,
