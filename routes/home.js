@@ -30,13 +30,45 @@ router.post('/', function(req, res) {
 
 /* get answers */
 router.get('/458625klfuieuj8ikkd58965dmmjkss/send', function(req, res) {
-	var room = { tiny: req.query.sb,
-		open: req.query.open,
-		rSpace: req.query.rSpace }
+	var room1 = { 
+		sb: req.query.sb1,
+		open: req.query.open1,
+		rSpace: req.query.rSpace1,
+		invite: req.query.invite1,
+		rest: req.query.rest1,
+		cozy: req.query.cozy1,
+		roomy: req.query.roomy1,
+		wide: req.query.wide1,
+		small: req.query.small1
+	}
+	var room2 = { 
+		sb: req.query.sb2,
+		open: req.query.open2,
+		rSpace: req.query.rSpace2,
+		invite: req.query.invite2,
+		rest: req.query.rest2,
+		cozy: req.query.cozy2,
+		roomy: req.query.roomy2,
+		wide: req.query.wide2,
+		small: req.query.small2
+	}
+	var room3 = { 
+		sb: req.query.sb3,
+		open: req.query.open3,
+		rSpace: req.query.rSpace3,
+		invite: req.query.invite3,
+		rest: req.query.rest3,
+		cozy: req.query.cozy3,
+		roomy: req.query.roomy3,
+		wide: req.query.wide3,
+		small: req.query.small3
+	}
 	var entry = new Entry({ 
 		age: req.query.age, 
 		sex: req.query.sex, 
-		room1: room
+		room1: room1,
+		room2: room2,
+		room3: room3
 	})
 	entry.save(function (err) {
 		if (err) return console.error(err)

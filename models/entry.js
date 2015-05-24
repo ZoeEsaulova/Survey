@@ -7,15 +7,39 @@ var entrySchema = mongoose.Schema({
 	age: Number,
 	sex: String,
 	room1: { 
-		tiny: Number,
+		sp: Number,
 		open: Number,
-		rSpace: Number 
+		rSpace: Number,
+		invite: Number,
+		rest: Number,
+		cozy: Number,
+		roomy: Number,
+		wide: Number,
+		small: Number,
+	},
+	room2: { 
+		sp: Number,
+		open: Number,
+		rSpace: Number,
+		invite: Number,
+		rest: Number,
+		cozy: Number,
+		roomy: Number,
+		wide: Number,
+		small: Number,
+	},
+	room3: { 
+		sp: Number,
+		open: Number,
+		rSpace: Number,
+		invite: Number,
+		rest: Number,
+		cozy: Number,
+		roomy: Number,
+		wide: Number,
+		small: Number,
 	}, 
-	room2: { type: mongoose.Schema.Types.ObjectId, ref: 'Room' }, 
-	room3: { type: mongoose.Schema.Types.ObjectId, ref: 'Room' }, 
-	room4: { type: mongoose.Schema.Types.ObjectId, ref: 'Room' }, 
-	room5: { type: mongoose.Schema.Types.ObjectId, ref: 'Room' }, 
-	room6: { type: mongoose.Schema.Types.ObjectId, ref: 'Room' }, 
+
 });
 
 // create the model for datasets and expose it to our app

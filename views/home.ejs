@@ -6,7 +6,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <script type="text/javascript" src="onlinefolio/layout/scripts/jquery.min.js"></script>
 <script type="text/javascript" src="onlinefolio/layout/scripts/jquery.slidepanel.setup.js"></script>
-<script type="text/javascript" src="javascripts/gifffer.min.js"></script>
+<!--script type="text/javascript" src="javascripts/gifffer.min.js"></script-->
 
 </head>
 <style>
@@ -144,7 +144,8 @@ img {
 	<hr noshade size="1">
 </div>
 <div class="welcome">
-	This test consists of 7 videos showing the 3D-Models of different rooms. Please watch each video and rate the rooms on the traits given rights. Do that for each pair of adjectives. 
+	This test consists of 7 videos showing the 3D-Models of different rooms. <br>
+	Please watch each video and rate the rooms on the traits given rights. Do that for each pair of adjectives. 
 </div>
 
 <form action="/458625klfuieuj8ikkd58965dmmjkss/send" method="get">
@@ -152,7 +153,7 @@ img {
 <div>
 	Please select your sex from the list  
 	<select name="sex" id="sex" required>
-	  <option selected="selected">Select an option</option>
+	  <option>...</option>
       <option>Female</option>
       <option>Male</option>
       <option>Other</option>
@@ -167,12 +168,23 @@ img {
 <div class="gifs">
 	<h2> Room 1 </h2>
 	<div class="gif">
-	<img data-gifffer="images/test_anim.gif"/>
+	<!--img data-gifffer="images/test_anim.gif"/-->
+	<iframe width="854" height="480" src="http://www.youtube.com/embed/el0YwTbe3mE?autoplay=0"></iframe>
 	</div>
 	<h2> Room 2 </h2>
+	
 	<div class="gif">
-	<img data-gifffer="images/test_anim.gif"/>
+	<iframe width="854" height="480" src="http://www.youtube.com/embed/mRy2gfPHVbE?autoplay=0"></iframe>
+	<!--img data-gifffer="images/test_anim.gif"/-->
 	</div>
+	<h2> Room 3 </h2>
+	
+	<div class="gif">
+	<iframe width="854" height="480" src="http://www.youtube.com/embed/F-YPMM44KkU?autoplay=0"></iframe>
+	<!--img data-gifffer="images/test_anim.gif"/-->
+	</div>
+	
+
 </div>
 <div class="fragen">
 <div class="frage">
@@ -182,13 +194,13 @@ img {
 			Non spacios
 		</div>
 		<div class="dots">
-				<input type="radio" name="sp" value="1">
-			  	<input type="radio" name="sp" value="2">
-			  	<input type="radio" name="sp" value="3">
-			  	<input type="radio" name="sp" value="4">
-			  	<input type="radio" name="sp" value="5">
-			  	<input type="radio" name="sp" value="6">
-			  	<input type="radio" name="sp" value="7">
+				<input type="radio" name="sp1" value="1" required>
+			  	<input type="radio" name="sp1" value="2" required>
+			  	<input type="radio" name="sp1" value="3" required>
+			  	<input type="radio" name="sp1" value="4" required>
+			  	<input type="radio" name="sp1" value="5" required>
+			  	<input type="radio" name="sp1" value="6" required>
+			  	<input type="radio" name="sp1" value="7" required>
 		</div>
 		<div class="second">
 			Spacios
@@ -202,13 +214,13 @@ img {
 			Open
 		</div>
 		<div class="dots">
-				<input type="radio" name="open" value="1">
-				<input type="radio" name="open" value="2">
-				<input type="radio" name="open" value="3">
-				<input type="radio" name="open" value="4">
-				<input type="radio" name="open" value="5">
-				<input type="radio" name="open" value="6">
-				<input type="radio" name="open" value="7">
+				<input type="radio" name="open1" value="1" required>
+				<input type="radio" name="open1" value="2" required>
+				<input type="radio" name="open1" value="3" required>
+				<input type="radio" name="open1" value="4" required>
+				<input type="radio" name="open1" value="5" required>
+				<input type="radio" name="open1" value="6" required>
+				<input type="radio" name="open1" value="7" required>
 
 		</div>
 		<div class="second">
@@ -223,13 +235,13 @@ img {
 			Restricted space
 		</div>
 		<div class="dots">
-				<input type="radio" name="rSpace" value="1">
-				<input type="radio" name="rSpace" value="2">
-				<input type="radio" name="rSpace" value="3">
-				<input type="radio" name="rSpace" value="4">
-				<input type="radio" name="rSpace" value="5">
-				<input type="radio" name="rSpace" value="6">
-				<input type="radio" name="rSpace" value="7">
+				<input type="radio" name="rSpace1" value="1" required>
+				<input type="radio" name="rSpace1" value="2" required>
+				<input type="radio" name="rSpace1" value="3" required>
+				<input type="radio" name="rSpace1" value="4" required>
+				<input type="radio" name="rSpace1" value="5" required>
+				<input type="radio" name="rSpace1" value="6" required>
+				<input type="radio" name="rSpace1" value="7" required>
 		</div>
 		<div class="second">
 			Free space
@@ -243,13 +255,13 @@ img {
 			Repelling
 		</div>
 		<div class="dots">
-				<input type="radio" name="invite" value="1" required>
-				<input type="radio" name="invite" value="2" required>
-				<input type="radio" name="invite" value="3" required>
-				<input type="radio" name="invite" value="4" required>
-				<input type="radio" name="invite" value="5" required>
-				<input type="radio" name="invite" value="6" required>
-				<input type="radio" name="invite" value="7" required>
+				<input type="radio" name="invite1" value="1" required>
+				<input type="radio" name="invite1" value="2" required>
+				<input type="radio" name="invite1" value="3" required>
+				<input type="radio" name="invite1" value="4" required>
+				<input type="radio" name="invite1" value="5" required>
+				<input type="radio" name="invite1" value="6" required>
+				<input type="radio" name="invite1" value="7" required>
 		</div>
 		<div class="second">
 			Inviting
@@ -263,13 +275,13 @@ img {
 			Disturbing
 		</div>
 		<div class="dots">
-				<input type="radio" name="rest" value="1">
-				<input type="radio" name="rest" value="2">
-				<input type="radio" name="rest" value="3">
-				<input type="radio" name="rest" value="4">
-				<input type="radio" name="rest" value="5">
-				<input type="radio" name="rest" value="6">
-				<input type="radio" name="rest" value="7">
+				<input type="radio" name="rest1" value="1" required>
+				<input type="radio" name="rest1" value="2" required>
+				<input type="radio" name="rest1" value="3" required>
+				<input type="radio" name="rest1" value="4" required>
+				<input type="radio" name="rest1" value="5" required>
+				<input type="radio" name="rest1" value="6" required>
+				<input type="radio" name="rest1" value="7" required>
 		</div>
 		<div class="second">
 			Restful
@@ -283,13 +295,13 @@ img {
 			Cozy
 		</div>
 		<div class="dots">
-				<input type="radio" name="cozy" value="1">
-				<input type="radio" name="cozy" value="2">
-				<input type="radio" name="cozy" value="3">
-				<input type="radio" name="cozy" value="4">
-				<input type="radio" name="cozy" value="5">
-				<input type="radio" name="cozy" value="6">
-				<input type="radio" name="cozy" value="7">
+				<input type="radio" name="cozy1" value="1" required>
+				<input type="radio" name="cozy1" value="2" required>
+				<input type="radio" name="cozy1" value="3" required>
+				<input type="radio" name="cozy1" value="4" required>
+				<input type="radio" name="cozy1" value="5" required>
+				<input type="radio" name="cozy1" value="6" required>
+				<input type="radio" name="cozy1" value="7" required>
 		</div>
 		<div class="second">
 			Monumental
@@ -303,13 +315,13 @@ img {
 			Cramped
 		</div>
 		<div class="dots">
-				<input type="radio" name="roomy" value="1">
-				<input type="radio" name="roomy" value="2">
-				<input type="radio" name="roomy" value="3">
-				<input type="radio" name="roomy" value="4">
-				<input type="radio" name="roomy" value="5">
-				<input type="radio" name="roomy" value="6">
-				<input type="radio" name="roomy" value="7">
+				<input type="radio" name="roomy1" value="1" required>
+				<input type="radio" name="roomy1" value="2" required>
+				<input type="radio" name="roomy1" value="3" required>
+				<input type="radio" name="roomy1" value="4" required>
+				<input type="radio" name="roomy1" value="5" required>
+				<input type="radio" name="roomy1" value="6" required>
+				<input type="radio" name="roomy1" value="7" required>
 		</div>
 		<div class="second">
 			Roomy
@@ -323,13 +335,13 @@ img {
 			Narrow
 		</div>
 		<div class="dots">
-				<input type="radio" name="wide" value="1">
-				<input type="radio" name="wide" value="2">
-				<input type="radio" name="wide" value="3">
-				<input type="radio" name="wide" value="4">
-				<input type="radio" name="wide" value="5">
-				<input type="radio" name="wide" value="6">
-				<input type="radio" name="wide" value="7">
+				<input type="radio" name="wide1" value="1" required>
+				<input type="radio" name="wide1" value="2" required>
+				<input type="radio" name="wide1" value="3" required>
+				<input type="radio" name="wide1" value="4" required>
+				<input type="radio" name="wide1" value="5" required>
+				<input type="radio" name="wide1" value="6" required> 
+				<input type="radio" name="wide1" value="7" required>
 		</div>
 		<div class="second">
 			Wide
@@ -343,13 +355,13 @@ img {
 			Small
 		</div>
 		<div class="dots">
-				<input type="radio" name="small" value="1">
-				<input type="radio" name="small" value="2">
-				<input type="radio" name="small" value="3">
-				<input type="radio" name="small" value="4">
-				<input type="radio" name="small" value="5">
-				<input type="radio" name="small" value="6">
-				<input type="radio" name="small" value="7">
+				<input type="radio" name="small1" value="1" required>
+				<input type="radio" name="small1" value="2" required>
+				<input type="radio" name="small1" value="3" required>
+				<input type="radio" name="small1" value="4" required>
+				<input type="radio" name="small1" value="5" required>
+				<input type="radio" name="small1" value="6" required>
+				<input type="radio" name="small1" value="7" required>
 		</div>
 		<div class="second">
 			Large
@@ -369,13 +381,13 @@ img {
 			Non spacios
 		</div>
 		<div class="dots">
-				<input type="radio" name="sp" value="1">
-			  	<input type="radio" name="sp" value="2">
-			  	<input type="radio" name="sp" value="3">
-			  	<input type="radio" name="sp" value="4">
-			  	<input type="radio" name="sp" value="5">
-			  	<input type="radio" name="sp" value="6">
-			  	<input type="radio" name="sp" value="7">
+				<input type="radio" name="sp2" value="1" required>
+			  	<input type="radio" name="sp2" value="2" required>
+			  	<input type="radio" name="sp2" value="3" required>
+			  	<input type="radio" name="sp2" value="4" required>
+			  	<input type="radio" name="sp2" value="5" required>
+			  	<input type="radio" name="sp2" value="6" required>
+			  	<input type="radio" name="sp2" value="7" required>
 		</div>
 		<div class="second">
 			Spacios
@@ -389,13 +401,13 @@ img {
 			Open
 		</div>
 		<div class="dots">
-				<input type="radio" name="open" value="1">
-				<input type="radio" name="open" value="2">
-				<input type="radio" name="open" value="3">
-				<input type="radio" name="open" value="4">
-				<input type="radio" name="open" value="5">
-				<input type="radio" name="open" value="6">
-				<input type="radio" name="open" value="7">
+				<input type="radio" name="open2" value="1" required>
+				<input type="radio" name="open2" value="2" required>
+				<input type="radio" name="open2" value="3" required>
+				<input type="radio" name="open2" value="4" required>
+				<input type="radio" name="open2" value="5" required>
+				<input type="radio" name="open2" value="6" required>
+				<input type="radio" name="open2" value="7" required>
 
 		</div>
 		<div class="second">
@@ -410,13 +422,13 @@ img {
 			Restricted space
 		</div>
 		<div class="dots">
-				<input type="radio" name="rSpace" value="1">
-				<input type="radio" name="rSpace" value="2">
-				<input type="radio" name="rSpace" value="3">
-				<input type="radio" name="rSpace" value="4">
-				<input type="radio" name="rSpace" value="5">
-				<input type="radio" name="rSpace" value="6">
-				<input type="radio" name="rSpace" value="7">
+				<input type="radio" name="rSpace2" value="1" required>
+				<input type="radio" name="rSpace2" value="2" required>
+				<input type="radio" name="rSpace2" value="3" required>
+				<input type="radio" name="rSpace2" value="4" required>
+				<input type="radio" name="rSpace2" value="5" required>
+				<input type="radio" name="rSpace2" value="6" required>
+				<input type="radio" name="rSpace2" value="7" required>
 		</div>
 		<div class="second">
 			Free space
@@ -430,13 +442,13 @@ img {
 			Repelling
 		</div>
 		<div class="dots">
-				<input type="radio" name="invite" value="1" required>
-				<input type="radio" name="invite" value="2" required>
-				<input type="radio" name="invite" value="3" required>
-				<input type="radio" name="invite" value="4" required>
-				<input type="radio" name="invite" value="5" required>
-				<input type="radio" name="invite" value="6" required>
-				<input type="radio" name="invite" value="7" required>
+				<input type="radio" name="invite2" value="1" required>
+				<input type="radio" name="invite2" value="2" required>
+				<input type="radio" name="invite2" value="3" required>
+				<input type="radio" name="invite2" value="4" required>
+				<input type="radio" name="invite2" value="5" required>
+				<input type="radio" name="invite2" value="6" required>
+				<input type="radio" name="invite2" value="7" required>
 		</div>
 		<div class="second">
 			Inviting
@@ -450,13 +462,13 @@ img {
 			Disturbing
 		</div>
 		<div class="dots">
-				<input type="radio" name="rest" value="1">
-				<input type="radio" name="rest" value="2">
-				<input type="radio" name="rest" value="3">
-				<input type="radio" name="rest" value="4">
-				<input type="radio" name="rest" value="5">
-				<input type="radio" name="rest" value="6">
-				<input type="radio" name="rest" value="7">
+				<input type="radio" name="rest2" value="1" required>
+				<input type="radio" name="rest2" value="2" required>
+				<input type="radio" name="rest2" value="3" required>
+				<input type="radio" name="rest2" value="4" required>
+				<input type="radio" name="rest2" value="5" required>
+				<input type="radio" name="rest2" value="6" required>
+				<input type="radio" name="rest2" value="7" required>
 		</div>
 		<div class="second">
 			Restful
@@ -470,13 +482,13 @@ img {
 			Cozy
 		</div>
 		<div class="dots">
-				<input type="radio" name="cozy" value="1">
-				<input type="radio" name="cozy" value="2">
-				<input type="radio" name="cozy" value="3">
-				<input type="radio" name="cozy" value="4">
-				<input type="radio" name="cozy" value="5">
-				<input type="radio" name="cozy" value="6">
-				<input type="radio" name="cozy" value="7">
+				<input type="radio" name="cozy2" value="1" required>
+				<input type="radio" name="cozy2" value="2" required>
+				<input type="radio" name="cozy2" value="3" required>
+				<input type="radio" name="cozy2" value="4" required>
+				<input type="radio" name="cozy2" value="5" required>
+				<input type="radio" name="cozy2" value="6" required>
+				<input type="radio" name="cozy2" value="7" required>
 		</div>
 		<div class="second">
 			Monumental
@@ -490,13 +502,13 @@ img {
 			Cramped
 		</div>
 		<div class="dots">
-				<input type="radio" name="roomy" value="1">
-				<input type="radio" name="roomy" value="2">
-				<input type="radio" name="roomy" value="3">
-				<input type="radio" name="roomy" value="4">
-				<input type="radio" name="roomy" value="5">
-				<input type="radio" name="roomy" value="6">
-				<input type="radio" name="roomy" value="7">
+				<input type="radio" name="roomy2" value="1" required>
+				<input type="radio" name="roomy2" value="2" required>
+				<input type="radio" name="roomy2" value="3" required>
+				<input type="radio" name="roomy2" value="4" required>
+				<input type="radio" name="roomy2" value="5" required>
+				<input type="radio" name="roomy2" value="6" required>
+				<input type="radio" name="roomy2" value="7" required>
 		</div>
 		<div class="second">
 			Roomy
@@ -510,13 +522,13 @@ img {
 			Narrow
 		</div>
 		<div class="dots">
-				<input type="radio" name="wide" value="1">
-				<input type="radio" name="wide" value="2">
-				<input type="radio" name="wide" value="3">
-				<input type="radio" name="wide" value="4">
-				<input type="radio" name="wide" value="5">
-				<input type="radio" name="wide" value="6">
-				<input type="radio" name="wide" value="7">
+				<input type="radio" name="wide2" value="1" required>
+				<input type="radio" name="wide2" value="2" required>
+				<input type="radio" name="wide2" value="3" required>
+				<input type="radio" name="wide2" value="4" required>
+				<input type="radio" name="wide2" value="5" required>
+				<input type="radio" name="wide2" value="6" required>
+				<input type="radio" name="wide2" value="7" required>
 		</div>
 		<div class="second">
 			Wide
@@ -530,13 +542,200 @@ img {
 			Small
 		</div>
 		<div class="dots">
-				<input type="radio" name="small" value="1">
-				<input type="radio" name="small" value="2">
-				<input type="radio" name="small" value="3">
-				<input type="radio" name="small" value="4">
-				<input type="radio" name="small" value="5">
-				<input type="radio" name="small" value="6">
-				<input type="radio" name="small" value="7">
+				<input type="radio" name="small2" value="1" required>
+				<input type="radio" name="small2" value="2" required>
+				<input type="radio" name="small2" value="3" required>
+				<input type="radio" name="small2" value="4" required>
+				<input type="radio" name="small2" value="5" required>
+				<input type="radio" name="small2" value="6" required>
+				<input type="radio" name="small2" value="7" required>
+		</div>
+		<div class="second">
+			Large
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+
+	
+</ul>
+</div>
+<div class="frage">
+<ul>
+	<li>
+		<div class="first">
+			Non spacios
+		</div>
+		<div class="dots">
+				<input type="radio" name="sp3" value="1" required>
+			  	<input type="radio" name="sp3" value="2" required>
+			  	<input type="radio" name="sp3" value="3" required>
+			  	<input type="radio" name="sp3" value="4" required>
+			  	<input type="radio" name="sp3" value="5" required>
+			  	<input type="radio" name="sp3" value="6" required>
+			  	<input type="radio" name="sp3" value="7" required>
+		</div>
+		<div class="second">
+			Spacios
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Open
+		</div>
+		<div class="dots">
+				<input type="radio" name="open3" value="1" required>
+				<input type="radio" name="open3" value="2" required>
+				<input type="radio" name="open3" value="3" required>
+				<input type="radio" name="open3" value="4" required>
+				<input type="radio" name="open3" value="5" required>
+				<input type="radio" name="open3" value="6" required>
+				<input type="radio" name="open3" value="7" required>
+
+		</div>
+		<div class="second">
+			Closed
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Restricted space
+		</div>
+		<div class="dots">
+				<input type="radio" name="rSpace3" value="1" required>
+				<input type="radio" name="rSpace3" value="2" required>
+				<input type="radio" name="rSpace3" value="3" required>
+				<input type="radio" name="rSpace3" value="4" required>
+				<input type="radio" name="rSpace3" value="5" required>
+				<input type="radio" name="rSpace3" value="6" required>
+				<input type="radio" name="rSpace3" value="7" required>
+		</div>
+		<div class="second">
+			Free space
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Repelling
+		</div>
+		<div class="dots">
+				<input type="radio" name="invite3" value="1" required>
+				<input type="radio" name="invite3" value="2" required>
+				<input type="radio" name="invite3" value="3" required>
+				<input type="radio" name="invite3" value="4" required>
+				<input type="radio" name="invite3" value="5" required>
+				<input type="radio" name="invite3" value="6" required>
+				<input type="radio" name="invite3" value="7" required>
+		</div>
+		<div class="second">
+			Inviting
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Disturbing
+		</div>
+		<div class="dots">
+				<input type="radio" name="rest3" value="1" required>
+				<input type="radio" name="rest3" value="2" required>
+				<input type="radio" name="rest3" value="3" required>
+				<input type="radio" name="rest3" value="4" required>
+				<input type="radio" name="rest3" value="5" required>
+				<input type="radio" name="rest3" value="6" required>
+				<input type="radio" name="rest3" value="7" required>
+		</div>
+		<div class="second">
+			Restful
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Cozy
+		</div>
+		<div class="dots">
+				<input type="radio" name="cozy3" value="1" required>
+				<input type="radio" name="cozy3" value="2" required>
+				<input type="radio" name="cozy3" value="3" required>
+				<input type="radio" name="cozy3" value="4" required>
+				<input type="radio" name="cozy3" value="5" required>
+				<input type="radio" name="cozy3" value="6" required>
+				<input type="radio" name="cozy3" value="7" required>
+		</div>
+		<div class="second">
+			Monumental
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Cramped
+		</div>
+		<div class="dots">
+				<input type="radio" name="roomy3" value="1" required>
+				<input type="radio" name="roomy3" value="2" required>
+				<input type="radio" name="roomy3" value="3" required>
+				<input type="radio" name="roomy3" value="4" required>
+				<input type="radio" name="roomy3" value="5" required>
+				<input type="radio" name="roomy3" value="6" required>
+				<input type="radio" name="roomy3" value="7" required>
+		</div>
+		<div class="second">
+			Roomy
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Narrow
+		</div>
+		<div class="dots">
+				<input type="radio" name="wide3" value="1" required>
+				<input type="radio" name="wide3" value="2" required>
+				<input type="radio" name="wide3" value="3" required>
+				<input type="radio" name="wide3" value="4" required>
+				<input type="radio" name="wide3" value="5" required>
+				<input type="radio" name="wide3" value="6" required>
+				<input type="radio" name="wide3" value="7" required>
+		</div>
+		<div class="second">
+			Wide
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Small
+		</div>
+		<div class="dots">
+				<input type="radio" name="small3" value="1" required>
+				<input type="radio" name="small3" value="2" required>
+				<input type="radio" name="small3" value="3" required>
+				<input type="radio" name="small3" value="4" required>
+				<input type="radio" name="small3" value="5" required>
+				<input type="radio" name="small3" value="6" required>
+				<input type="radio" name="small3" value="7" required>
 		</div>
 		<div class="second">
 			Large
