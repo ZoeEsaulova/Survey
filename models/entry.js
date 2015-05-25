@@ -6,7 +6,10 @@ var mongoose = require('mongoose');
 var entrySchema = mongoose.Schema({
 	age: Number,
 	sex: String,
-	test: String,
+	large: String, //largest room
+	small: String, //smallest room
+	like: String,
+	dislike: String,
 	room1: { 
 		sp: Number,
 		open: Number,
@@ -40,6 +43,28 @@ var entrySchema = mongoose.Schema({
 		wide: Number,
 		small: Number,
 	}, 
+	room4: { 
+		sp: Number,
+		open: Number,
+		rSpace: Number,
+		invite: Number,
+		rest: Number,
+		cozy: Number,
+		roomy: Number,
+		wide: Number,
+		small: Number,
+	},
+	room5: { 
+		sp: Number,
+		open: Number,
+		rSpace: Number,
+		invite: Number,
+		rest: Number,
+		cozy: Number,
+		roomy: Number,
+		wide: Number,
+		small: Number,
+	}
 
 });
 

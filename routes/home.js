@@ -63,13 +63,40 @@ router.get('/458625klfuieuj8ikkd58965dmmjkss/send', function(req, res) {
 		wide: req.query.wide3,
 		small: req.query.small3
 	}
+	var room4 = { 
+		sb: req.query.sb4,
+		open: req.query.open4,
+		rSpace: req.query.rSpace4,
+		invite: req.query.invite4,
+		rest: req.query.rest4,
+		cozy: req.query.cozy4,
+		roomy: req.query.roomy4,
+		wide: req.query.wide4,
+		small: req.query.small4
+	}
+	var room5 = { 
+		sb: req.query.sb5,
+		open: req.query.open5,
+		rSpace: req.query.rSpace5,
+		invite: req.query.invite5,
+		rest: req.query.rest5,
+		cozy: req.query.cozy5,
+		roomy: req.query.roomy5,
+		wide: req.query.wide5,
+		small: req.query.small5
+	}
 	var entry = new Entry({ 
-		test: "Hallo",
 		age: req.query.age, 
 		sex: req.query.sex, 
 		room1: room1,
 		room2: room2,
-		room3: room3
+		room3: room3,
+		room4: room4,
+		room5: room5,
+		like: req.query.like,
+		dislike: req.query.dislike,
+		large: req.query.large,
+		small: req.query.small
 	})
 	entry.save(function (err) {
 		if (err) return console.error(err)
