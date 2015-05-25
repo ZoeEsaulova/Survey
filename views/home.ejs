@@ -6,7 +6,6 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <script type="text/javascript" src="onlinefolio/layout/scripts/jquery.min.js"></script>
 <script type="text/javascript" src="onlinefolio/layout/scripts/jquery.slidepanel.setup.js"></script>
-<!--script type="text/javascript" src="javascripts/gifffer.min.js"></script-->
 
 </head>
 <style>
@@ -64,6 +63,12 @@ h2 {
 	font-family: "Georgia";
 
 }
+h3 {
+	color: red;
+	font-size: 100%;
+	font-family: "Georgia";
+
+}
 .myButton:hover {
 	background-color:#CC3366;
 }
@@ -94,6 +99,12 @@ h2 {
 	float:left;
 
 }
+.first2 {
+	text-align: left;
+	width:300px;
+	float:left;
+
+}
 .second {
 	width:120px;
     text-align: left;
@@ -102,6 +113,11 @@ h2 {
 }
 .dots {
     width:180px;
+    margin-left: 5px;
+    float:left;
+}
+.dots2 {
+    width:80px;
     margin-left: 5px;
     float:left;
 }
@@ -114,7 +130,6 @@ h2 {
 ul {
     list-style-type: none;
     padding: 0px;
-    margin: 0px;
 }
 .personal {
 	background-color:#F8F8F8;
@@ -133,7 +148,7 @@ img {
 	margin-bottom: 60px;
 }
 .frage {
-	margin-bottom: 240px;
+	margin-bottom: 260px;
 	margin-top: 80px;
 }
 </style>
@@ -151,9 +166,9 @@ img {
 <form action="/458625klfuieuj8ikkd58965dmmjkss/send" method="get">
 <div class="personal">
 <div>
-	Please select your sex from the list  
+	Please select your sex from the list  &nbsp
 	<select name="sex" id="sex" required>
-	  <option>...</option>
+	  <option value="default" disabled="disabled">Select one--</option>
       <option>Female</option>
       <option>Male</option>
       <option>Other</option>
@@ -161,30 +176,31 @@ img {
 </div>
 
 <div style="margin-top: 10px; font-family: "Calibri";">
-	Please type your age
+	Please type your age&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 	<input type="number" name="age" required>
 </div>
 </div>
 <div class="gifs">
-	<h2> Room 1 </h2>
+	<h3> Room 1 </h3>
 	<div class="gif">
-	<!--img data-gifffer="images/test_anim.gif"/-->
 	<iframe width="854" height="480" src="http://www.youtube.com/embed/el0YwTbe3mE?autoplay=0"></iframe>
 	</div>
-	<h2> Room 2 </h2>
-	
+	<h3> Room 2 </h3>	
 	<div class="gif">
 	<iframe width="854" height="480" src="http://www.youtube.com/embed/mRy2gfPHVbE?autoplay=0"></iframe>
-	<!--img data-gifffer="images/test_anim.gif"/-->
 	</div>
-	<h2> Room 3 </h2>
-	
+	<h3> Room 3 </h3>
 	<div class="gif">
 	<iframe width="854" height="480" src="http://www.youtube.com/embed/F-YPMM44KkU?autoplay=0"></iframe>
-	<!--img data-gifffer="images/test_anim.gif"/-->
 	</div>
-	
-
+	<h3> Room 4 </h3>
+	<div class="gif">
+	<iframe width="854" height="480" src="http://www.youtube.com/embed/zLVYIPH8QDA?autoplay=0"></iframe>
+	</div>
+	<h3> Room 5 </h3>
+	<div class="gif">
+	<iframe width="854" height="480" src="http://www.youtube.com/embed/4pufDic6PdY?autoplay=0"></iframe>
+	</div>
 </div>
 <div class="fragen">
 <div class="frage">
@@ -747,24 +763,449 @@ img {
 
 	
 </ul>
+</div>
+<div class="frage">
+<ul>
+	<li>
+		<div class="first">
+			Non spacios
+		</div>
+		<div class="dots">
+				<input type="radio" name="sp4" value="1" required>
+			  	<input type="radio" name="sp4" value="2" required>
+			  	<input type="radio" name="sp4" value="3" required>
+			  	<input type="radio" name="sp4" value="4" required>
+			  	<input type="radio" name="sp4" value="5" required>
+			  	<input type="radio" name="sp4" value="6" required>
+			  	<input type="radio" name="sp4" value="7" required>
+		</div>
+		<div class="second">
+			Spacios
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Open
+		</div>
+		<div class="dots">
+				<input type="radio" name="open4" value="1" required>
+				<input type="radio" name="open4" value="2" required>
+				<input type="radio" name="open4" value="3" required>
+				<input type="radio" name="open4" value="4" required>
+				<input type="radio" name="open4" value="5" required>
+				<input type="radio" name="open4" value="6" required>
+				<input type="radio" name="open4" value="7" required>
 
-<button class="myButton" type="submit" style="margin-left:120px;">Submit</button>
+		</div>
+		<div class="second">
+			Closed
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Restricted space
+		</div>
+		<div class="dots">
+				<input type="radio" name="rSpace4" value="1" required>
+				<input type="radio" name="rSpace4" value="2" required>
+				<input type="radio" name="rSpace4" value="3" required>
+				<input type="radio" name="rSpace4" value="4" required>
+				<input type="radio" name="rSpace4" value="5" required>
+				<input type="radio" name="rSpace4" value="6" required>
+				<input type="radio" name="rSpace4" value="7" required>
+		</div>
+		<div class="second">
+			Free space
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Repelling
+		</div>
+		<div class="dots">
+				<input type="radio" name="invite4" value="1" required>
+				<input type="radio" name="invite4" value="2" required>
+				<input type="radio" name="invite4" value="3" required>
+				<input type="radio" name="invite4" value="4" required>
+				<input type="radio" name="invite4" value="5" required>
+				<input type="radio" name="invite4" value="6" required>
+				<input type="radio" name="invite4" value="7" required>
+		</div>
+		<div class="second">
+			Inviting
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Disturbing
+		</div>
+		<div class="dots">
+				<input type="radio" name="rest4" value="1" required>
+				<input type="radio" name="rest4" value="2" required>
+				<input type="radio" name="rest4" value="3" required>
+				<input type="radio" name="rest4" value="4" required>
+				<input type="radio" name="rest4" value="5" required>
+				<input type="radio" name="rest4" value="6" required>
+				<input type="radio" name="rest4" value="7" required>
+		</div>
+		<div class="second">
+			Restful
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Cozy
+		</div>
+		<div class="dots">
+				<input type="radio" name="cozy4" value="1" required>
+				<input type="radio" name="cozy4" value="2" required>
+				<input type="radio" name="cozy4" value="3" required>
+				<input type="radio" name="cozy4" value="4" required>
+				<input type="radio" name="cozy4" value="5" required>
+				<input type="radio" name="cozy4" value="6" required>
+				<input type="radio" name="cozy4" value="7" required>
+		</div>
+		<div class="second">
+			Monumental
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Cramped
+		</div>
+		<div class="dots">
+				<input type="radio" name="roomy4" value="1" required>
+				<input type="radio" name="roomy4" value="2" required>
+				<input type="radio" name="roomy4" value="3" required>
+				<input type="radio" name="roomy4" value="4" required>
+				<input type="radio" name="roomy4" value="5" required>
+				<input type="radio" name="roomy4" value="6" required>
+				<input type="radio" name="roomy4" value="7" required>
+		</div>
+		<div class="second">
+			Roomy
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Narrow
+		</div>
+		<div class="dots">
+				<input type="radio" name="wide4" value="1" required>
+				<input type="radio" name="wide4" value="2" required>
+				<input type="radio" name="wide4" value="3" required>
+				<input type="radio" name="wide4" value="4" required>
+				<input type="radio" name="wide4" value="5" required>
+				<input type="radio" name="wide4" value="6" required>
+				<input type="radio" name="wide4" value="7" required>
+		</div>
+		<div class="second">
+			Wide
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Small
+		</div>
+		<div class="dots">
+				<input type="radio" name="small4" value="1" required>
+				<input type="radio" name="small4" value="2" required>
+				<input type="radio" name="small4" value="3" required>
+				<input type="radio" name="small4" value="4" required>
+				<input type="radio" name="small4" value="5" required>
+				<input type="radio" name="small4" value="6" required>
+				<input type="radio" name="small4" value="7" required>
+		</div>
+		<div class="second">
+			Large
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
 
+	
+</ul>
+</div>
+<div class="frage">
+<ul>
+	<li>
+		<div class="first">
+			Non spacios
+		</div>
+		<div class="dots">
+				<input type="radio" name="sp5" value="1" required>
+			  	<input type="radio" name="sp5" value="2" required>
+			  	<input type="radio" name="sp5" value="3" required>
+			  	<input type="radio" name="sp5" value="4" required>
+			  	<input type="radio" name="sp5" value="5" required>
+			  	<input type="radio" name="sp5" value="6" required>
+			  	<input type="radio" name="sp5" value="7" required>
+		</div>
+		<div class="second">
+			Spacios
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Open
+		</div>
+		<div class="dots">
+				<input type="radio" name="open5" value="1" required>
+				<input type="radio" name="open5" value="2" required>
+				<input type="radio" name="open5" value="3" required>
+				<input type="radio" name="open5" value="4" required>
+				<input type="radio" name="open5" value="5" required>
+				<input type="radio" name="open5" value="6" required>
+				<input type="radio" name="open5" value="7" required>
+
+		</div>
+		<div class="second">
+			Closed
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Restricted space
+		</div>
+		<div class="dots">
+				<input type="radio" name="rSpace5" value="1" required>
+				<input type="radio" name="rSpace5" value="2" required>
+				<input type="radio" name="rSpace5" value="3" required>
+				<input type="radio" name="rSpace5" value="4" required>
+				<input type="radio" name="rSpace5" value="5" required>
+				<input type="radio" name="rSpace5" value="6" required>
+				<input type="radio" name="rSpace5" value="7" required>
+		</div>
+		<div class="second">
+			Free space
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Repelling
+		</div>
+		<div class="dots">
+				<input type="radio" name="invite5" value="1" required>
+				<input type="radio" name="invite5" value="2" required>
+				<input type="radio" name="invite5" value="3" required>
+				<input type="radio" name="invite5" value="4" required>
+				<input type="radio" name="invite5" value="5" required>
+				<input type="radio" name="invite5" value="6" required>
+				<input type="radio" name="invite5" value="7" required>
+		</div>
+		<div class="second">
+			Inviting
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Disturbing
+		</div>
+		<div class="dots">
+				<input type="radio" name="rest5" value="1" required>
+				<input type="radio" name="rest5" value="2" required>
+				<input type="radio" name="rest5" value="3" required>
+				<input type="radio" name="rest5" value="4" required>
+				<input type="radio" name="rest5" value="5" required>
+				<input type="radio" name="rest5" value="6" required>
+				<input type="radio" name="rest5" value="7" required>
+		</div>
+		<div class="second">
+			Restful
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Cozy
+		</div>
+		<div class="dots">
+				<input type="radio" name="cozy5" value="1" required>
+				<input type="radio" name="cozy5" value="2" required>
+				<input type="radio" name="cozy5" value="3" required>
+				<input type="radio" name="cozy5" value="4" required>
+				<input type="radio" name="cozy5" value="5" required>
+				<input type="radio" name="cozy5" value="6" required>
+				<input type="radio" name="cozy5" value="7" required>
+		</div>
+		<div class="second">
+			Monumental
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Cramped
+		</div>
+		<div class="dots">
+				<input type="radio" name="roomy5" value="1" required>
+				<input type="radio" name="roomy5" value="2" required>
+				<input type="radio" name="roomy5" value="3" required>
+				<input type="radio" name="roomy5" value="4" required>
+				<input type="radio" name="roomy5" value="5" required>
+				<input type="radio" name="roomy5" value="6" required>
+				<input type="radio" name="roomy5" value="7" required>
+		</div>
+		<div class="second">
+			Roomy
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Narrow
+		</div>
+		<div class="dots">
+				<input type="radio" name="wide5" value="1" required>
+				<input type="radio" name="wide5" value="2" required>
+				<input type="radio" name="wide5" value="3" required>
+				<input type="radio" name="wide5" value="4" required>
+				<input type="radio" name="wide5" value="5" required>
+				<input type="radio" name="wide5" value="6" required>
+				<input type="radio" name="wide5" value="7" required>
+		</div>
+		<div class="second">
+			Wide
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+	<li>
+		<div class="first">
+			Small
+		</div>
+		<div class="dots">
+				<input type="radio" name="small5" value="1" required>
+				<input type="radio" name="small5" value="2" required>
+				<input type="radio" name="small5" value="3" required>
+				<input type="radio" name="small5" value="4" required>
+				<input type="radio" name="small5" value="5" required>
+				<input type="radio" name="small5" value="6" required>
+				<input type="radio" name="small5" value="7" required>
+		</div>
+		<div class="second">
+			Large
+		</div>
+	</li>
+	<li>
+		<span style="color:white;">test</span>
+	</li>
+
+	
+</ul>
+<ul>
+	<li>
+		<div class="first2">
+			Which room do you like most?
+		</div>
+		<div class="dots2">
+				<select name="like" id="sex" required>
+	  <option value="default" disabled="disabled">Select one--</option>
+      <option>Room 1</option>
+      <option>Room 2</option>
+      <option>Room 3</option>
+      <option>Room 4</option>
+      <option>Room 5</option>
+    </select>
+		</div>
+	</li>
+	<li>
+		<div class="first2">
+			Which room do you like least?
+		</div>
+		<div class="dots2">
+				<select name="dislike" id="sex" required>
+	  <option value="default" disabled="disabled">Select one--</option>
+      <option>Room 1</option>
+      <option>Room 2</option>
+      <option>Room 3</option>
+      <option>Room 4</option>
+      <option>Room 5</option>
+    </select>
+		</div>
+	</li>
+	<li>
+		<div class="first2">
+			Which room has the largest horizontal area?
+		</div>
+		<div class="dots2">
+				<select name="large" id="sex" required>
+	  <option value="default" disabled="disabled">Select one--</option>
+      <option>Room 1</option>
+      <option>Room 2</option>
+      <option>Room 3</option>
+      <option>Room 4</option>
+      <option>Room 5</option>
+    </select>
+		</div>
+	</li>
+	<li>
+		<div class="first2">
+			Which room has the smallest horizontal area?
+		</div>
+		<div class="dots2">
+				<select name="small" id="sex" required>
+	  <option value="default" disabled="disabled">Select one--</option>
+      <option>Room 1</option>
+      <option>Room 2</option>
+      <option>Room 3</option>
+      <option>Room 4</option>
+      <option>Room 5</option>
+    </select>
+		</div>
+	</li>
+</ul>
+
+
+<button class="myButton" type="submit" style="margin-left:120px; margin-top:30px;">Submit</button>
 
 </div>
 </div>
 
 </form>
-<script>
-window.onload = function() {
-    Gifffer();
-}
-</script>
-	
-	
-	<!--button class="myButton" type="submit" id="button">Button</button-->
-	<!--img src="images/test.jpg" alt="" onclick='javascript:(this.src=="images/test.jpg"?this.src="images/gif1.gif":"")' /-->
-	
-
 </body>
 </html>
